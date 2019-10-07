@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_margin="10dp"
+    tools:context=".SummaryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/score"
+        android:textSize="50dp"
+        android:text="Your Score : 0/5"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/result"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Congratulations!"
+        android:layout_below="@+id/score"
+        android:layout_width="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content" />
+
+   <TextView
+       android:id="@+id/q1"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="50dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="25dp"
+       android:layout_below="@+id/result"
+       android:text="Question 1: What is OCBC RoboInvest?"
+       />
+
+    <TextView
+        android:id="@+id/q1a1"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="1: You are talking to it now :)"
+        android:textSize="20dp"
+        android:layout_below="@+id/q1"
+        />
+
+    <TextView
+        android:id="@+id/q1a2"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="2: It is a platform run by Robots to help you invest"
+        android:textSize="20dp"
+        android:layout_below="@+id/q1a1"
+        />
+
+    <TextView
+        android:id="@+id/q1a3"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="3: An automated investment platform that lets you choose from a range of portfolios and automatically rebalances your portfolio (with your approval) based on market conditions. "
+        android:textSize="20dp"
+        android:layout_below="@+id/q1a2"
+        />
+
+    <TextView
+        android:id="@+id/q1checking"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Your Answer is ... "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/q1a3"
+        />
+
+    <TextView
+        android:id="@+id/q1answer"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Correct answer is ... "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/q1checking"
+        />
+
+    <View
+        android:id="@+id/q1line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#000"
+        android:layout_below="@+id/q1answer"
+        />
+
+    <TextView
+        android:id="@+id/q2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_below="@+id/q1line"
+        android:text="Question 2: How many curated portfolios does OCBC RoboInvest offer?
+"
+        />
+
+    <TextView
+        android:id="@+id/q2a1"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="1: 1"
+        android:textSize="20dp"
+        android:layout_below="@+id/q2"
+        />
+
+    <TextView
+        android:id="@+id/q2a2"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="2: 5"
+        android:textSize="20dp"
+        android:layout_below="@+id/q2a1"
+        />
+
+    <TextView
+        android:id="@+id/q2a3"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="3: 30"
+        android:textSize="20dp"
+        android:layout_below="@+id/q2a2"
+        />
+
+    <TextView
+        android:id="@+id/q2a4"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="4: 28"
+        android:textSize="20dp"
+        android:layout_below="@+id/q2a3"
+        />
+
+    <TextView
+        android:id="@+id/q2checking"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Your Answer is ... "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/q2a4"
+        />
+
+    <TextView
+        android:id="@+id/q2answer"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Correct answer is ... "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/q2checking"
+        />
+
+    <View
+        android:id="@+id/q2line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#000"
+        android:layout_below="@+id/q2answer"
+        />
+
+    <TextView
+        android:id="@+id/q3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_below="@+id/q2line"
+        android:text="Question 3: What do the portfolios consist of?"
+        />
+
+    <TextView
+        android:id="@+id/q3a1"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="1: ETFs only"
+        android:textSize="20dp"
+        android:layout_below="@+id/q3"
+        />
+
+    <TextView
+        android:id="@+id/q3a2"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="2: Unit Trust"
+        android:textSize="20dp"
+        android:layout_below="@+id/q3a1"
+        />
+
+    <TextView
+        android:id="@+id/q3a3"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="3: ETFs and Equities"
+        android:textSize="20dp"
+        android:layout_below="@+id/q3a2"
+        />
+
+    <TextView
+        android:id="@+id/q3a4"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="4: Bonds"
+        android:textSize="20dp"
+        android:layout_below="@+id/q3a3"
+        />
+
+    <TextView
+        android:id="@+id/q3checking"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Your Answer is ... "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/q3a4"
+        />
+
+    <TextView
+        android:id="@+id/q3answer"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Correct answer is ... "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/q3checking"
+        />
+
+    <View
+        android:id="@+id/q3line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#000"
+        android:layout_below="@+id/q3answer"
+        />
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_below="@+id/q3line"
+                android:text="Question 4: What is the minimum investment for OCBC RoboInvest?"
+                />
+
+            <TextView
+                android:id="@+id/q4a1"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="1: SGD5,000"
+                android:textSize="20dp"
+                android:layout_below="@+id/q4"
+                />
+
+            <TextView
+                android:id="@+id/q4a2"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="2: SGD4,500"
+                android:textSize="20dp"
+                android:layout_below="@+id/q4a1"
+                />
+
+            <TextView
+                android:id="@+id/q4a3"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="3: SGD4,000"
+                android:textSize="20dp"
+                android:layout_below="@+id/q4a2"
+                />
+
+            <TextView
+                android:id="@+id/q4a4"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="4: SGD3,500"
+                android:textSize="20dp"
+                android:layout_below="@+id/q4a3"
+                />
+
+            <TextView
+                android:id="@+id/q4checking"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Your Answer is ... "
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/q4a4"
+                />
+
+            <TextView
+                android:id="@+id/q4answer"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Correct answer is ... "
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/q4checking"
+                />
+
+            <View
+                android:id="@+id/q4line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#000"
+                android:layout_below="@+id/q4answer"
+                />
+
+            <TextView
+                android:id="@+id/q5"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_below="@+id/q4line"
+                android:text="Question 5: How do I manage my portfolio?"
+                />
+
+            <TextView
+                android:id="@+id/q5a1"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="1: Log into the platform daily and rebalance my portfolio by myself"
+                android:textSize="20dp"
+                android:layout_below="@+id/q5"
+                />
+
+            <TextView
+                android:id="@+id/q5a2"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="2: The platform will monitor market conditions and automatically rebalances my portfolio upon my approval"
+                android:textSize="20dp"
+                android:layout_below="@+id/q5a1"
+                />
+
+            <TextView
+                android:id="@+id/q5a3"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="3: Someone will call me monthly for a performance review"
+                android:textSize="20dp"
+                android:layout_below="@+id/q5a2"
+                />
+
+            <TextView
+                android:id="@+id/q5checking"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Your Answer is ... "
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/q5a3"
+                />
+
+            <TextView
+                android:id="@+id/q5answer"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Correct answer is ... "
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/q5checking"
+                />
+
+            <ImageView
+                android:id="@+id/endBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/end"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/q5answer"
+                android:clickable="true"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

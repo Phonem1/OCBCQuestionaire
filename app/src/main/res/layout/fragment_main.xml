@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ocbclogo"
+        />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi there! Welcome to OCBC Bank."
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        />
+
+    <TextView
+        android:id="@+id/doyouknow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/main_page_intro1"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/yesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/yes"
+        android:layout_below="@+id/doyouknow"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        />
+
+
+
+</RelativeLayout>

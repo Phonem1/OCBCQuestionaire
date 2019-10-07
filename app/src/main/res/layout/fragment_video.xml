@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoFragment">
+
+    <ImageView
+        android:id="@+id/skipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exit_icon"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:textAlignment="center"
+        android:text="Here is a short video on what is OCBC RoboInvest. After the video, there will be a short quiz. If you can answer all the questions correctly, you will get a starbucks gift card worth S$20. Celebrate and get your favourite Starbucks drink on us."
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <cn.jzvd.JzvdStd
+    android:id="@+id/vPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        />
+
+</RelativeLayout>
